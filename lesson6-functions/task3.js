@@ -7,4 +7,4 @@ function checkOrder (available, ordered) {
         console.log("Your order is accepted");
     }
 }
-checkOrder(4,3);
+checkOrder(0,0);
