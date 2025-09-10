@@ -9,10 +9,8 @@ let areaRectangle;
 areaRectangle = (lenght * width).toFixed(2);
 console.log(areaRectangle);
 
-
 let radius2 = 15;
 let height = 50;
 let areaCircle2;
-areaCircle2 = (Math.PI * radius2 **2 * height).toFixed(2);
+areaCircle2 = (Math.PI * radius2 ** 2 * height).toFixed(2);
 console.log(areaCircle2);
-

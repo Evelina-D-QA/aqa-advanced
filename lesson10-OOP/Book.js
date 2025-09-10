@@ -1,49 +1,50 @@
 export class Book {
-    
-    constructor(name, author, year) {
-        this._name = name;
-        this._author = author;
-        this._year = year;
-    }
-    
-    set name(newName) {
-        if (newName === ' ') {
-            console.log(`The field name cannot be empty.`)
-        } else {
-            this._name = newName
-        }
-    }
-    get name() {
-        return this._name
-    }
+  constructor(name, author, year) {
+    this._name = name;
+    this._author = author;
+    this._year = year;
+  }
 
-    set author(newAuthor) {
-        if (typeof newAuthor === "number") {
-            console.log(`The author field cannot be a number`)
-        } else {
-            this._author = newAuthor
-        }
+  set name(newName) {
+    if (newName === " ") {
+      console.log(`The field name cannot be empty.`);
+    } else {
+      this._name = newName;
     }
-    get author() {
-        return this._author
-    }
+  }
+  get name() {
+    return this._name;
+  }
 
-    set year (newYear) {
-        if (newYear > 2025) {
-            console.log(`Wrong year`)
-        } else {
-            this._year = newYear
-        }
+  set author(newAuthor) {
+    if (typeof newAuthor === "number") {
+      console.log(`The author field cannot be a number`);
+    } else {
+      this._author = newAuthor;
     }
-    get year() {
-        return this._year
-    }
+  }
+  get author() {
+    return this._author;
+  }
 
-    printInfo() {
-        console.log(`This book ${this.name} was written by the author ${this.author} in ${this.year} year`);
+  set year(newYear) {
+    if (newYear > 2025) {
+      console.log(`Wrong year`);
+    } else {
+      this._year = newYear;
     }
+  }
+  get year() {
+    return this._year;
+  }
 
-    static oldestBook(booksArray) {
-        return [...booksArray].sort((a, b) => a.year - b.year)[0];
-    }
+  printInfo() {
+    console.log(
+      `This book ${this.name} was written by the author ${this.author} in ${this.year} year`,
+    );
+  }
+
+  static oldestBook(booksArray) {
+    return [...booksArray].sort((a, b) => a.year - b.year)[0];
+  }
 }
