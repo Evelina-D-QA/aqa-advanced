@@ -11,7 +11,7 @@ export default defineConfig([
     rules: {
       "no-unused-vars": "warn",
       "no-duplicate-case": "warn",
-      "no-undef": "warn"
+      "no-undef": "warn",
     },
   },
 ]);

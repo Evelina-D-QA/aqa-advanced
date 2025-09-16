@@ -1,4 +1,4 @@
-{ 
+{
   "type": "commonjs",
   "devDependencies": {
     "@eslint/js": "^9.35.0",
