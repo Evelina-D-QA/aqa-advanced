@@ -3,3 +3,13 @@ ex.js
 sum.js
 sum.test.js
 requests.test.js
+.husky
+pre-commit
+eslint.config.mjs
+jsconfig.json
+package-lock.json
+package.json
+prettierrc.json
+node_modules
+faker
+@faker-js/faker
